@@ -1,0 +1,57 @@
+.gradientCircleSky {
+  position: fixed;
+  top: -5%;
+  left: 20%;
+  width: 2000px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    #7dd3fc 20%,
+    #bae6fd 40%,
+    #e0f2fe 60%,
+    transparent 70%
+  );
+  z-index: -1;
+  opacity: 0.4;
+}
+
+.gradientCircleSky::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 3000px;
+  height: 3000px;
+  backdrop-filter: blur(200px);
+}
+
+.gradientCircleRose {
+  position: fixed;
+  top: 0%;
+  left: -20%;
+  width: 2000px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    #fda4af 20%,
+    #fecdd3 40%,
+    #ffe4e6 60%,
+    transparent 70%
+  );
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.gradientCircleSky::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 3000px;
+  height: 3000px;
+  backdrop-filter: blur(200px);
+}
