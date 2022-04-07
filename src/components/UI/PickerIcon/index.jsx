@@ -1,3 +1,5 @@
+import { memo } from "react"
+
 const PickerIcon = ({ w = 16, color = 'text-black' }) => {
   return <div className={`${color}`}>
     <svg width={`${w}`} viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -7,4 +9,4 @@ const PickerIcon = ({ w = 16, color = 'text-black' }) => {
   </div>
 }
 
-export default PickerIcon
+export default memo(PickerIcon)

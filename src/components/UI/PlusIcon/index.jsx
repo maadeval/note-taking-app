@@ -1,3 +1,5 @@
+import { memo } from "react"
+
 const PlusIcon = ({ h = 12, w = 12 }) => {
   return (
     <div className='text-white'>
@@ -17,4 +19,4 @@ const PlusIcon = ({ h = 12, w = 12 }) => {
   )
 }
 
-export default PlusIcon
+export default memo(PlusIcon)
