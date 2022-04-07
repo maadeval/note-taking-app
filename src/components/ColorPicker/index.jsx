@@ -9,7 +9,7 @@ const ColorPicker = ({ listColors, colorSelected, setColorSelected, isTop = true
     setShowMenu(false)
   }
 
-  return <div className="relative flex items-center">
+  return <div className="relative z-40 flex items-center">
     <button
       className={`w-6 h-6 flex items-center justify-center rounded-md hover:ring-4 ${colorSelected.principal} transition`}
       type="button"
