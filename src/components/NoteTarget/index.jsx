@@ -30,7 +30,7 @@ const NoteTarget = ({ message, color, index }) => {
     setIsEditable(false)
   }
 
-  return <article className={`flex relative items-center p-2 rounded-md shadow-slate-200 shadow-xl bg-white/40 hover:bg-white/80 transition`} key={index}>
+  return <article className={`sm:w-auto w-full justify-between flex relative items-center p-2 rounded-md shadow-slate-200 shadow-xl bg-white/40 hover:bg-white/80 transition`} key={index}>
     <div className={`rounded-md ${color.principal} ${color.border} ${color.text}`}>
       <p contentEditable={isEditable} onInput={(e) => handleText(e)} className='max-w-xs py-2 pl-2 pr-4 text-xl'>{message}</p>
     </div>

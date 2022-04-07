@@ -26,9 +26,9 @@ const InputNote = () => {
   }
 
   return <>
-    <form className="fixed bottom-0 z-40 flex items-center justify-center gap-4 px-8 py-4 mb-12 -translate-x-1/2 rounded-md shadow-2xl shadow-slate-200 bg-white/80 left-1/2" onSubmit={handleSubmit}>
+    <form className="fixed bottom-0 z-40 flex items-center justify-center w-[calc(100%_-_20px)] gap-4 px-8 py-4 mb-4 sm:mb-12 -translate-x-1/2 rounded-md shadow-2xl sm:w-auto shadow-slate-200 bg-white/80 left-1/2" onSubmit={handleSubmit}>
       <input
-        className="px-2 py-1 text-lg transition rounded-md outline-none focus:ring-4 focus:ring-sky-200"
+        className="w-full px-2 py-1 text-lg transition rounded-md outline-none sm:w-auto focus:ring-4 focus:ring-sky-200"
         value={value}
         onChange={handleChange}
         placeholder='Agregar nota...'
@@ -38,7 +38,7 @@ const InputNote = () => {
         colorSelected={colorSelected}
         setColorSelected={setColorSelected}
       />
-      <button className="w-full p-2 text-2xl text-white transition rounded-full bg-sky-600 hover:brightness-105 hover:ring-4 hover:ring-sky-200">
+      <button className="p-2 text-2xl text-white transition rounded-full bg-sky-600 hover:brightness-105 hover:ring-4 hover:ring-sky-200">
         <PlusIcon w={22} h={22} />
       </button>
     </form>
